@@ -30,3 +30,11 @@ export default function Button({
 
   return restProps.href ? link : button;
 }
+
+export function OutlineButton({ chilrdren }) {
+  return (
+    <button class="text-primary-high dark:text-primary-low-medium p-2 text-sm w-full rounded-md font-semibold hover:bg-primary-low text-left">
+      {chilrdren}
+    </button>
+  );
+}
